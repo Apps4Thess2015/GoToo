@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_imgs">
+        <item>@drawable/icon1</item>
+        <item>@drawable/icon2</item>
+        <item>@drawable/icon3</item>
+        <item>@drawable/icon4</item>
+    </string-array>
+
+    <string-array name="array_marker_icons">
+        <item>@drawable/ic_icon_1</item>
+        <item>@drawable/ic_icon_2</item>
+        <item>@drawable/ic_icon_3</item>
+        <item>@drawable/ic_icon_4</item>
+        <item>@drawable/ic_icon_5</item>
+        <item>@drawable/ic_icon_6</item>
+        <item>@drawable/ic_icon_7</item>
+        <item>@drawable/ic_icon_8</item>
+        <item>@drawable/ic_icon_9</item>
+        <item>@drawable/ic_icon_10</item>
+        <item>@drawable/ic_icon_11</item>
+        <item>@drawable/ic_icon_12</item>
+        <item>@drawable/ic_icon_13</item>
+        <item>@drawable/ic_icon_14</item>
+        <item>@drawable/ic_icon_15</item>
+        <item>@drawable/ic_icon_16</item>
+        <item>@drawable/ic_icon_17</item>
+        <item>@drawable/ic_icon_18</item>
+        <item>@drawable/ic_icon_19</item>
+        <item>@drawable/ic_icon_20</item>
+        <item>@drawable/ic_icon_21</item>
+        <item>@drawable/ic_icon_22</item>
+        <item>@drawable/ic_icon_23</item>
+        <item>@drawable/ic_icon_24</item>
+        <item>@drawable/ic_icon_25</item>
+    </string-array>
+
+</resources>
