@@ -12,12 +12,15 @@ public class MainPresenterImpl implements MainPresenter {
 
 
     @Override
-    public void removeMarkers(final ArrayList<Marker> markerArrayList, final LatLng pos) {
-        for (int i = 0; i < markerArrayList.size(); i++) {
+    public int removeMarkers(final ArrayList<Marker> markerArrayList, final LatLng pos) {
+        int i;
+        for (i = 0; i < markerArrayList.size(); i++) {
             if (markerArrayList.get(i).getPosition().equals(pos)) {
-                markerArrayList.get(i).remove();
+                markerArrayList.get(i).remove();    //remove marker from map
+                break;
             }
         }
+        return i;
     }
 
 }

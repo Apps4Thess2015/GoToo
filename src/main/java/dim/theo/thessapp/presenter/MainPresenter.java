@@ -10,5 +10,5 @@ import java.util.ArrayList;
  */
 public interface MainPresenter {
 
-    public void removeMarkers(ArrayList<Marker> mockMarkers, LatLng pos);
+    public int removeMarkers(ArrayList<Marker> mockMarkers, LatLng pos);
 }

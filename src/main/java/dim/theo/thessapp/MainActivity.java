@@ -1,11 +1,13 @@
 package dim.theo.thessapp;
 
 import android.content.res.TypedArray;
+import android.graphics.Bitmap;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -16,13 +18,18 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.VisibleRegion;
 
 import java.util.ArrayList;
 
+import dim.theo.thessapp.helpers.Helper;
 import dim.theo.thessapp.presenter.MainPresenterImpl;
+
+import static dim.theo.thessapp.helpers.Helper.distanceFrom;
 
 public class MainActivity extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnMarkerClickListener, GoogleMap.OnCameraChangeListener {
 
+    private Helper helper;
     private GoogleMap mMap;
     public static final String TAG = "MAINACTIVITY";
 
@@ -68,12 +75,17 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
     private MainPresenterImpl mainPresenter;
 
+    double visibleWidth;
+    double radius1, radius2, radius3, radius4, radius5;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         mainPresenter = new MainPresenterImpl();
+        helper = new Helper(this);
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -143,7 +155,23 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     public void onCameraChange(CameraPosition cameraPosition) {
         // update mapCenter
         mapCenter = mMap.getCameraPosition().target;
-        Log.i("onCameraChange", "mapCENTER Lat == " + mapCenter.latitude + "  Lng ==" + mapCenter.longitude);
+//        Log.i("onCameraChange", "mapCENTER Lat == " + mapCenter.latitude + "  Lng ==" + mapCenter.longitude);
+
+        VisibleRegion visibleRegion = mMap.getProjection().getVisibleRegion();
+        LatLng nearLeft = visibleRegion.nearLeft;
+        LatLng nearRight = visibleRegion.nearRight;
+        LatLng farLeft = visibleRegion.farLeft;
+        LatLng farRight = visibleRegion.farRight;
+
+        visibleWidth = distanceFrom(nearLeft.latitude, nearLeft.longitude, nearRight.latitude, nearRight.longitude);
+        radius1 = visibleWidth / 10;
+        radius2 = visibleWidth / 8;
+        radius3 = visibleWidth / 6;
+        radius4 = visibleWidth / 4;
+        radius5 = visibleWidth / 2;
+//        double visibleHeight = distanceFrom(farLeft.latitude, farLeft.longitude, farRight.latitude, farRight.longitude);
+
+        Toast.makeText(this, "Width is  " + String.valueOf(visibleWidth), Toast.LENGTH_LONG).show();
 
         // reCalculate markers distance from Center
         reCalculateDistance();
@@ -160,33 +188,38 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         for (LatLng pos : latLngArrayList) {
             tempLocation.setLatitude(pos.latitude);
             tempLocation.setLongitude(pos.longitude);
-            if (mapCenterLocation.distanceTo(tempLocation) < DISTANCE) {
-                updateMarkerIcon(pos);
+
+//            Log.i(TAG, "DISTANCE is :  " + DISTANCE + "    radius1 is : " + radius1);
+
+            if (mapCenterLocation.distanceTo(tempLocation) < radius1) {
+                resizeIcon(pos, 8);
+            } else if(mapCenterLocation.distanceTo(tempLocation) < radius2) {
+                resizeIcon(pos, 7);
+            } else if(mapCenterLocation.distanceTo(tempLocation) < radius3) {
+                resizeIcon(pos, 6);
+            } else if(mapCenterLocation.distanceTo(tempLocation) < radius4) {
+                resizeIcon(pos, 5);
+//            } else if(mapCenterLocation.distanceTo(tempLocation) < radius5) {
             } else {
-                updateNormalMarkerIcon(pos);
+                resizeIcon(pos, 4);
             }
         }
 
     }
 
-    private void updateNormalMarkerIcon(LatLng pos) {
-        removeMarker(pos);
-        mMap.addMarker(new MarkerOptions()
+    private void resizeIcon(LatLng pos, int scaleFactor) {
+        int i = removeMarker(pos);
+        Bitmap halfsizeBitmap = helper.scaleBitmap(scaleFactor);
+        markerArrayList.add(i, mMap.addMarker(new MarkerOptions()
                 .position(pos)
-                .title("UPDATED  UPDATED MARKER")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
+                .title("RESIZE ICON")
+                .icon(BitmapDescriptorFactory.fromBitmap(halfsizeBitmap))));
     }
 
-    private void updateMarkerIcon(LatLng pos) {
-        removeMarker(pos);
-        mMap.addMarker(new MarkerOptions()
-                .position(pos)
-                .title("UPDATED MARKER")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE)));
-    }
 
-    private void removeMarker(LatLng pos) {
-        mainPresenter.removeMarkers(markerArrayList, pos);
+
+    private int removeMarker(LatLng pos) {
+        return mainPresenter.removeMarkers(markerArrayList, pos);
     }
 
     private void addMarkers() {
