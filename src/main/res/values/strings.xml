@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">ThessApp</string>
     <string name="title_activity_main">Main</string>
+    <string name="bottom_sheet_text">
+        <p><b>Villa Bianca</b> or <b>Villa Fernandez</b> is the name of a famous mansion in the city of <a href="www.google.com" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a>. It is located in Vassilisis Olgas street and was built in the early 20th century as a residence for Dino Fernandez Diaz and his family. The architect was <a href="/w/index.php?title=Pietro_Arrigoni&amp;action=edit&amp;redlink=1" class="new" title="Pietro Arrigoni (page does not exist)">Pietro Arrigoni</a>.</p>
+        <p>Of Italo-Jewish origin, Fernandez was an wealthy merchant and industrialist of the city.</p>
+        <p>The villa passed to his daughter, where she lived with her Christian husband, and was later confiscated and used by the Germans during the <a href="/wiki/Axis_occupation_of_Greece" title="Axis occupation of Greece">Axis occupation of Greece</a>. To escape from the <a href="/wiki/Nazis" title="Nazis" class="mw-redirect">Nazis</a>, Dino Fernandez Diaz, with other members of his family, fled to <a href="/wiki/Italy" title="Italy">Italy</a>, but they were murdered in 1943 by the <a href="/wiki/SS" title="SS" class="mw-redirect">SS</a>.</p>
+        <p>The building has elements of <a href="/wiki/Eclecticism" title="Eclecticism">eclecticist</a> architecture, like many other buildings of that period in the city.</p>
+        <p>From 2013 it houses the <a href="/wiki/Municipal_Art_Gallery_(Thessaloniki)" title="Municipal Art Gallery (Thessaloniki)">Municipal Art Gallery</a>.</p>
+        <h2><span class="mw-headline" id="Sources">Sources</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Villa_Bianca_(Thessaloniki)&amp;action=edit&amp;section=1" title="Edit section: Sources">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+    </string>
 </resources>

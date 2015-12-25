@@ -4,11 +4,12 @@ import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.location.Location;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.widget.Toast;
 
+import com.flipboard.bottomsheet.BottomSheetLayout;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -78,11 +79,14 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     double visibleWidth;
     double radius1, radius2, radius3, radius4, radius5;
 
+    private BottomSheetLayout bottomSheet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        bottomSheet = (BottomSheetLayout) findViewById(R.id.bottomsheet);
 
         mainPresenter = new MainPresenterImpl();
         helper = new Helper(this);
@@ -109,7 +113,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(final GoogleMap googleMap) {
         mMap = googleMap;
-//        mMap.setOnMarkerClickListener(this);
+        mMap.setOnMarkerClickListener(this);
         mMap.setOnCameraChangeListener(this);
 
         mapCenter = mMap.getCameraPosition().target;
@@ -120,34 +124,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public boolean onMarkerClick(final Marker marker) {
-        Log.i(TAG, "onMarkerClick ");
-
-        double lat = marker.getPosition().latitude;
-        double lngt = marker.getPosition().longitude;
-
-        final LatLng place = new LatLng(lat, lngt);
-
-        final Handler handler = new Handler();
-        final int[] i = {0};
-
-        handler.post(new Runnable() {
-            @Override
-            public void run() {
-                marker.remove();
-                mMap.addMarker(new MarkerOptions()
-                        .position(place)
-                        .title("Same  Place")
-                        .icon(BitmapDescriptorFactory.fromResource(imgs.getResourceId(i[0], -1))));
-
-                i[0]++;
-
-                if (i[0] < 4) {
-                    // Post again 16ms later.
-                    handler.postDelayed(this, 128);
-                }
-            }
-        });
-
+        bottomSheet.showWithSheetView(LayoutInflater.from(this).inflate(R.layout.bottom_sheet, bottomSheet, false));
         return true;
     }
 
