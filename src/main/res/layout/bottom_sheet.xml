@@ -4,6 +4,6 @@
     android:background="@android:color/background_light">
 
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="@string/bottom_sheet_text"/>
+        android:text="@string/bottom_sheet_text" android:id="@+id/sheet_text"/>
 
 </LinearLayout>

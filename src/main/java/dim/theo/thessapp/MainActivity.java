@@ -5,8 +5,10 @@ import android.graphics.Bitmap;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.flipboard.bottomsheet.BottomSheetLayout;
@@ -80,6 +82,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     double radius1, radius2, radius3, radius4, radius5;
 
     private BottomSheetLayout bottomSheet;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -125,6 +128,8 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public boolean onMarkerClick(final Marker marker) {
         bottomSheet.showWithSheetView(LayoutInflater.from(this).inflate(R.layout.bottom_sheet, bottomSheet, false));
+        textView = (TextView) bottomSheet.findViewById(R.id.sheet_text);
+        textView.setMovementMethod(LinkMovementMethod.getInstance());
         return true;
     }
 
