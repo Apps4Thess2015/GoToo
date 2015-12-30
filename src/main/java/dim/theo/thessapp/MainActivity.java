@@ -105,8 +105,13 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     public void populateMarkerItemsArrayList() {
-        MarkerItem markerItem = new MarkerItem();
-        mainPresenter.populateMarkerItemsArrayList(markerItem, latLngArrayList, names, markerIcons, markerItemArrayList);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                MarkerItem markerItem = new MarkerItem();
+                mainPresenter.populateMarkerItemsArrayList(markerItem, latLngArrayList, names, markerIcons, markerItemArrayList);
+            }
+        }).start();
     }
 
     /**
@@ -202,8 +207,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 //                .title("RESIZE ICON")
                 .icon(BitmapDescriptorFactory.fromBitmap(halfsizeBitmap))));
     }
-
-
 
     private int removeMarker(LatLng pos) {
         return mainPresenter.removeMarkers(markerArrayList, pos);
