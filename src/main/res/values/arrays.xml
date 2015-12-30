@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string-array name="array_imgs">
-        <item>@drawable/icon1</item>
-        <item>@drawable/icon2</item>
-        <item>@drawable/icon3</item>
-        <item>@drawable/icon4</item>
-    </string-array>
-
     <string-array name="array_marker_icons">
         <item>@drawable/ic_icon_1</item>
         <item>@drawable/ic_icon_2</item>
@@ -34,6 +27,34 @@
         <item>@drawable/ic_icon_23</item>
         <item>@drawable/ic_icon_24</item>
         <item>@drawable/ic_icon_25</item>
+    </string-array>
+
+    <string-array name="array_markeritems_names">
+        <item>Mars 1</item>
+        <item>Mars 2</item>
+        <item>Mars 3</item>
+        <item>Mars 4</item>
+        <item>Mars 5</item>
+        <item>Mars 6</item>
+        <item>Mars 7</item>
+        <item>Mars 8</item>
+        <item>Mars 9</item>
+        <item>Mars 10</item>
+        <item>Mars 11</item>
+        <item>Mars 12</item>
+        <item>Mars 13</item>
+        <item>Mars 14</item>
+        <item>Mars 15</item>
+        <item>Mars 16</item>
+        <item>Mars 17</item>
+        <item>Mars 18</item>
+        <item>Mars 19</item>
+        <item>Mars 20</item>
+        <item>Mars 21</item>
+        <item>Mars 22</item>
+        <item>Mars 23</item>
+        <item>Mars 24</item>
+        <item>Mars 25</item>
     </string-array>
 
 </resources>

@@ -26,6 +26,7 @@ import com.google.android.gms.maps.model.VisibleRegion;
 import java.util.ArrayList;
 
 import dim.theo.thessapp.helpers.Helper;
+import dim.theo.thessapp.model.MarkerItem;
 import dim.theo.thessapp.presenter.MainPresenterImpl;
 
 import static dim.theo.thessapp.helpers.Helper.distanceFrom;
@@ -36,12 +37,11 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     public static final String TAG = "MAINACTIVITY";
 
-    private TypedArray imgs;
     private TypedArray markerIcons;
+    private String[] names;
 
     private LatLng mapCenter;
 
-    // LatLng sydney = new LatLng(-34, 151);
     private ArrayList<LatLng> latLngArrayList = new ArrayList<LatLng>() {{
         add(new LatLng(40.597525973153253, 22.976585104818607));
         add(new LatLng(40.597525, 22.0097658));
@@ -72,8 +72,8 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     }};
 
     public ArrayList<Marker> markerArrayList = new ArrayList<>(latLngArrayList.size());
+    private ArrayList<MarkerItem> markerItemArrayList = new ArrayList<>(latLngArrayList.size());
 
-    public static final int DISTANCE = 50000;
     private static final LatLng SKG_VIEW = new LatLng(40.6402778, 22.9438889);
 
     private MainPresenterImpl mainPresenter;
@@ -82,7 +82,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     double radius1, radius2, radius3, radius4, radius5;
 
     private BottomSheetLayout bottomSheet;
-    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,10 +98,16 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        imgs = getResources().obtainTypedArray(R.array.array_imgs);
         markerIcons = getResources().obtainTypedArray(R.array.array_marker_icons);
+        names = getResources().getStringArray(R.array.array_markeritems_names);
+
+        populateMarkerItemsArrayList();
     }
 
+    public void populateMarkerItemsArrayList() {
+        MarkerItem markerItem = new MarkerItem();
+        mainPresenter.populateMarkerItemsArrayList(markerItem, latLngArrayList, names, markerIcons, markerItemArrayList);
+    }
 
     /**
      * Manipulates the map once available.
@@ -128,9 +133,9 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public boolean onMarkerClick(final Marker marker) {
         bottomSheet.showWithSheetView(LayoutInflater.from(this).inflate(R.layout.bottom_sheet, bottomSheet, false));
-        textView = (TextView) bottomSheet.findViewById(R.id.sheet_text);
+        TextView textView = (TextView) bottomSheet.findViewById(R.id.sheet_text);
         textView.setMovementMethod(LinkMovementMethod.getInstance());
-        return true;
+        return false;
     }
 
     @Override
@@ -194,7 +199,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         Bitmap halfsizeBitmap = helper.scaleBitmap(scaleFactor);
         markerArrayList.add(i, mMap.addMarker(new MarkerOptions()
                 .position(pos)
-                .title("RESIZE ICON")
+//                .title("RESIZE ICON")
                 .icon(BitmapDescriptorFactory.fromBitmap(halfsizeBitmap))));
     }
 
@@ -210,7 +215,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         for (LatLng pos : latLngArrayList) {
             markerArrayList.add(i, mMap.addMarker(new MarkerOptions()
                     .position(pos)
-                    .title("Marker in Thessaloniki")
+//                    .title("Marker in Thessaloniki")
                     .icon(BitmapDescriptorFactory.fromResource(markerIcons.getResourceId(i, -1)))));
             i++;
         }
