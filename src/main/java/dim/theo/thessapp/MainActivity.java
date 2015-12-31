@@ -9,7 +9,6 @@ import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.flipboard.bottomsheet.BottomSheetLayout;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -147,13 +146,10 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     public void onCameraChange(CameraPosition cameraPosition) {
         // update mapCenter
         mapCenter = mMap.getCameraPosition().target;
-//        Log.i("onCameraChange", "mapCENTER Lat == " + mapCenter.latitude + "  Lng ==" + mapCenter.longitude);
 
         VisibleRegion visibleRegion = mMap.getProjection().getVisibleRegion();
         LatLng nearLeft = visibleRegion.nearLeft;
         LatLng nearRight = visibleRegion.nearRight;
-        LatLng farLeft = visibleRegion.farLeft;
-        LatLng farRight = visibleRegion.farRight;
 
         visibleWidth = distanceFrom(nearLeft.latitude, nearLeft.longitude, nearRight.latitude, nearRight.longitude);
         radius1 = visibleWidth / 10;
@@ -161,9 +157,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         radius3 = visibleWidth / 6;
         radius4 = visibleWidth / 4;
         radius5 = visibleWidth / 2;
-//        double visibleHeight = distanceFrom(farLeft.latitude, farLeft.longitude, farRight.latitude, farRight.longitude);
-
-        Toast.makeText(this, "Width is  " + String.valueOf(visibleWidth), Toast.LENGTH_LONG).show();
 
         // reCalculate markers distance from Center
         reCalculateDistance();
@@ -181,8 +174,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
             tempLocation.setLatitude(pos.latitude);
             tempLocation.setLongitude(pos.longitude);
 
-//            Log.i(TAG, "DISTANCE is :  " + DISTANCE + "    radius1 is : " + radius1);
-
             if (mapCenterLocation.distanceTo(tempLocation) < radius1) {
                 resizeIcon(pos, 8);
             } else if(mapCenterLocation.distanceTo(tempLocation) < radius2) {
@@ -191,7 +182,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                 resizeIcon(pos, 6);
             } else if(mapCenterLocation.distanceTo(tempLocation) < radius4) {
                 resizeIcon(pos, 5);
-//            } else if(mapCenterLocation.distanceTo(tempLocation) < radius5) {
             } else {
                 resizeIcon(pos, 4);
             }
@@ -204,7 +194,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         Bitmap halfsizeBitmap = helper.scaleBitmap(scaleFactor);
         markerArrayList.add(i, mMap.addMarker(new MarkerOptions()
                 .position(pos)
-//                .title("RESIZE ICON")
                 .icon(BitmapDescriptorFactory.fromBitmap(halfsizeBitmap))));
     }
 
@@ -218,7 +207,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         for (LatLng pos : latLngArrayList) {
             markerArrayList.add(i, mMap.addMarker(new MarkerOptions()
                     .position(pos)
-//                    .title("Marker in Thessaloniki")
                     .icon(BitmapDescriptorFactory.fromResource(markerIcons.getResourceId(i, -1)))));
             i++;
         }
