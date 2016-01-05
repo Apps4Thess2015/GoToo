@@ -15,6 +15,8 @@ import dim.theo.thessapp.model.MarkerItem;
 public class MainPresenterImpl implements MainPresenter {
 
 
+    private static final String TAG = "mainPresenter.Impl";
+
     @Override
     public int removeMarkers(final ArrayList<Marker> markerArrayList, final LatLng pos) {
         int i;

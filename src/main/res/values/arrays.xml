@@ -5,56 +5,12 @@
         <item>@drawable/ic_icon_1</item>
         <item>@drawable/ic_icon_2</item>
         <item>@drawable/ic_icon_3</item>
-        <item>@drawable/ic_icon_4</item>
-        <item>@drawable/ic_icon_5</item>
-        <item>@drawable/ic_icon_6</item>
-        <item>@drawable/ic_icon_7</item>
-        <item>@drawable/ic_icon_8</item>
-        <item>@drawable/ic_icon_9</item>
-        <item>@drawable/ic_icon_10</item>
-        <item>@drawable/ic_icon_11</item>
-        <item>@drawable/ic_icon_12</item>
-        <item>@drawable/ic_icon_13</item>
-        <item>@drawable/ic_icon_14</item>
-        <item>@drawable/ic_icon_15</item>
-        <item>@drawable/ic_icon_16</item>
-        <item>@drawable/ic_icon_17</item>
-        <item>@drawable/ic_icon_18</item>
-        <item>@drawable/ic_icon_19</item>
-        <item>@drawable/ic_icon_20</item>
-        <item>@drawable/ic_icon_21</item>
-        <item>@drawable/ic_icon_22</item>
-        <item>@drawable/ic_icon_23</item>
-        <item>@drawable/ic_icon_24</item>
-        <item>@drawable/ic_icon_25</item>
     </string-array>
 
     <string-array name="array_markeritems_names">
-        <item>Mars 1</item>
-        <item>Mars 2</item>
-        <item>Mars 3</item>
-        <item>Mars 4</item>
-        <item>Mars 5</item>
-        <item>Mars 6</item>
-        <item>Mars 7</item>
-        <item>Mars 8</item>
-        <item>Mars 9</item>
-        <item>Mars 10</item>
-        <item>Mars 11</item>
-        <item>Mars 12</item>
-        <item>Mars 13</item>
-        <item>Mars 14</item>
-        <item>Mars 15</item>
-        <item>Mars 16</item>
-        <item>Mars 17</item>
-        <item>Mars 18</item>
-        <item>Mars 19</item>
-        <item>Mars 20</item>
-        <item>Mars 21</item>
-        <item>Mars 22</item>
-        <item>Mars 23</item>
-        <item>Mars 24</item>
-        <item>Mars 25</item>
+        <item>Arch of Galerius and Rotunda</item>
+        <item>Navarinou Square</item>
+        <item>Roman Forum</item>
     </string-array>
 
 </resources>

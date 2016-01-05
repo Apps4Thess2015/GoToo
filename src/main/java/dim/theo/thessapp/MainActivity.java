@@ -5,8 +5,8 @@ import android.graphics.Bitmap;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.text.Html;
 import android.text.method.LinkMovementMethod;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.widget.TextView;
 
@@ -38,36 +38,14 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
     private TypedArray markerIcons;
     private String[] names;
+    private String[] texts;
 
     private LatLng mapCenter;
 
     private ArrayList<LatLng> latLngArrayList = new ArrayList<LatLng>() {{
-        add(new LatLng(40.597525973153253, 22.976585104818607));
-        add(new LatLng(40.597525, 22.0097658));
-        add(new LatLng(40.397323, 22.98612));
-        add(new LatLng(40.497545, 22.87643));
-        add(new LatLng(40.119743, 22.76632));
-        add(new LatLng(40.327654, 22.54635));
-        add(new LatLng(40.437657, 22.656455));
-        add(new LatLng(40.547768, 22.546434));
-        add(new LatLng(40.657988, 22.216434));
-        add(new LatLng(40.767666, 22.416433));
-        add(new LatLng(40.877777, 22.32676));
-        add(new LatLng(40.937888, 22.12687));
-
-        add(new LatLng(40.157899, 22.11611));
-        add(new LatLng(40.257800, 22.22622));
-        add(new LatLng(40.357888, 22.33633));
-        add(new LatLng(40.457877, 22.44644));
-        add(new LatLng(40.557866, 22.55655));
-        add(new LatLng(40.667855, 22.66666));
-        add(new LatLng(40.757844, 22.77677));
-        add(new LatLng(40.857833, 22.88688));
-        add(new LatLng(40.957822, 22.99699));
-        add(new LatLng(40.517811, 22.00611));
-        add(new LatLng(40.997822, 22.51622));
-        add(new LatLng(40.227833, 22.31633));
-        add(new LatLng(40.337844, 22.72644));
+        add(new LatLng(40.632205, 22.951809));
+        add(new LatLng(40.6307, 22.9487));
+        add(new LatLng(40.638, 22.946));
     }};
 
     public ArrayList<Marker> markerArrayList = new ArrayList<>(latLngArrayList.size());
@@ -99,6 +77,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
         markerIcons = getResources().obtainTypedArray(R.array.array_marker_icons);
         names = getResources().getStringArray(R.array.array_markeritems_names);
+        texts = getResources().getStringArray(R.array.array_markeritems_texts);
 
         populateMarkerItemsArrayList();
     }
@@ -129,15 +108,22 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setOnCameraChangeListener(this);
 
         mapCenter = mMap.getCameraPosition().target;
-        Log.i(TAG, "mapCENTER Lat == " + mapCenter.latitude + "  Lng ==" + mapCenter.longitude);
 
         addMarkers();
     }
 
     @Override
     public boolean onMarkerClick(final Marker marker) {
+        int i;
+        for (i = 0; i < markerArrayList.size(); i++) {
+            if (markerArrayList.get(i).getPosition().equals(marker.getPosition())) {
+                break;
+            }
+        }
+
         bottomSheet.showWithSheetView(LayoutInflater.from(this).inflate(R.layout.bottom_sheet, bottomSheet, false));
         TextView textView = (TextView) bottomSheet.findViewById(R.id.sheet_text);
+        textView.setText(Html.fromHtml(texts[i]));
         textView.setMovementMethod(LinkMovementMethod.getInstance());
         return false;
     }
@@ -192,7 +178,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     private void resizeIcon(LatLng pos, int scaleFactor) {
         int i = removeMarker(pos);
         Bitmap halfsizeBitmap = helper.scaleBitmap(scaleFactor);
-        markerArrayList.add(i, mMap.addMarker(new MarkerOptions()
+        markerArrayList.set(i, mMap.addMarker(new MarkerOptions()
                 .position(pos)
                 .icon(BitmapDescriptorFactory.fromBitmap(halfsizeBitmap))));
     }

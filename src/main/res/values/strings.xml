@@ -1,12 +1,29 @@
 <resources>
     <string name="app_name">ThessApp</string>
     <string name="title_activity_main">Main</string>
-    <string name="bottom_sheet_text">
-        <p><b>Villa Bianca</b> or <b>Villa Fernandez</b> is the name of a famous mansion in the city of <a href="http:/www.google.com" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a>. It is located in Vassilisis Olgas street and was built in the early 20th century as a residence for Dino Fernandez Diaz and his family. The architect was <a href="/w/index.php?title=Pietro_Arrigoni&amp;action=edit&amp;redlink=1" class="new" title="Pietro Arrigoni (page does not exist)">Pietro Arrigoni</a>.</p>
-        <p>Of Italo-Jewish origin, Fernandez was an wealthy merchant and industrialist of the city.</p>
-        <p>The villa passed to his daughter, where she lived with her Christian husband, and was later confiscated and used by the Germans during the <a href="/wiki/Axis_occupation_of_Greece" title="Axis occupation of Greece">Axis occupation of Greece</a>. To escape from the <a href="/wiki/Nazis" title="Nazis" class="mw-redirect">Nazis</a>, Dino Fernandez Diaz, with other members of his family, fled to <a href="/wiki/Italy" title="Italy">Italy</a>, but they were murdered in 1943 by the <a href="/wiki/SS" title="SS" class="mw-redirect">SS</a>.</p>
-        <p>The building has elements of <a href="/wiki/Eclecticism" title="Eclecticism">eclecticist</a> architecture, like many other buildings of that period in the city.</p>
-        <p>From 2013 it houses the <a href="/wiki/Municipal_Art_Gallery_(Thessaloniki)" title="Municipal Art Gallery (Thessaloniki)">Municipal Art Gallery</a>.</p>
-        <h2><span class="mw-headline" id="Sources">Sources</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Villa_Bianca_(Thessaloniki)&amp;action=edit&amp;section=1" title="Edit section: Sources">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-    </string>
+
+    <string-array name="array_markeritems_texts">
+        <item>
+            <![CDATA[
+        <p>The <b>Arch of Galerius</b> (<a href="/wiki/Greek_language" title="Greek language">Gr.</a>: αψίδα του Γαλερίου) (or <b>Kamara</b>, <a href="/wiki/Greek_language" title="Greek language">Gr.</a>:καμάρα) and the <b>Rotunda</b> (ροτόντα) are neighboring early 4th-century monuments in the city of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, in the region of <a href="/wiki/Central_Macedonia" title="Central Macedonia">Central Macedonia</a> in northern <a href="/wiki/Greece" title="Greece">Greece</a>. The Rotunda is also known as the <b>Church of Agios Georgios</b> or (in English) the <b><a href="/wiki/Rotunda_(architecture)" title="Rotunda (architecture)">Rotunda</a> of <a href="/wiki/St._George" title="St. George" class="mw-redirect">St. George</a></b>.</p>
+        ]]>
+        </item>
+
+        <item>
+            <![CDATA[
+            <p><b>Navarinou Square</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Πλατεία Ναβαρίνου</span>) is a <a href="/wiki/Town_square" title="Town square">square</a> in the city of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a> in <a href="/wiki/Greece" title="Greece">Greece</a>.</p>
+            <h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Navarinou_Square&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+            <p>The square dates back to the Roman period of the city, with the ruins of the palace of <a href="/wiki/Galerius" title="Galerius">Galerius</a> located within it. The square is also the site of <a href="/wiki/Massacre_of_Thessalonica" title="Massacre of Thessalonica">Massacre of Thessalonica</a> which took place during the reign of <a href="/wiki/Theodosius_I" title="Theodosius I">Theodosius I</a>.</p>
+            <p>Today it is a popular meeting place, mainly amongst the student population of the city.</p>
+        ]]>
+        </item>
+
+        <item>
+            <![CDATA[
+        <p>The <a href="/wiki/Roman_Forum" title="Roman Forum">Roman Forum</a> of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a> is the ancient Roman-era <a href="/wiki/Forum_(Roman)" title="Forum (Roman)">forum</a> (or <i>Agora</i>) of the city, located at the upper side of <a href="/wiki/Aristotelous_Square" title="Aristotelous Square">Aristotelous Square</a>.</p>
+        <p>It is a large two-terraced forum<sup id="cite_ref-Frommer.27s_Greece_Forum_1_1-0" class="reference"><a href="#cite_note-Frommer.27s_Greece_Forum_1-1"><span>[</span>1<span>]</span></a></sup> featuring two-storey <a href="/wiki/Stoa" title="Stoa">stoas</a>, dug up by accident in the 1960s. The forum complex also boasts two <a href="/wiki/Roman_baths" title="Roman baths" class="mw-redirect">Roman baths</a>,<sup id="cite_ref-A_Companion_1_2-0" class="reference"><a href="#cite_note-A_Companion_1-2"><span>[</span>2<span>]</span></a></sup> one of which has been excavated while the other is buried underneath the city, and a small theater which was also used for <a href="/wiki/Gladiatorial_games" title="Gladiatorial games" class="mw-redirect">gladiatorial games</a>. Although the initial complex was not built in Roman times, it was largely refurbished in the 2nd century.<sup id="cite_ref-A_Companion_1_2-1" class="reference"><a href="#cite_note-A_Companion_1-2"><span>[</span>2<span>]</span></a></sup> It is believed that the forum and the theater continued to be used until at least the 6th century.<sup id="cite_ref-From_Early_Roman_3-0" class="reference">
+        ]]>
+        </item>
+
+    </string-array>
 </resources>
