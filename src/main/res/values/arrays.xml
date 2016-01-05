@@ -5,12 +5,14 @@
         <item>@drawable/ic_icon_1</item>
         <item>@drawable/ic_icon_2</item>
         <item>@drawable/ic_icon_3</item>
+        <item>@drawable/ic_icon_3</item>
     </string-array>
 
     <string-array name="array_markeritems_names">
         <item>Arch of Galerius and Rotunda</item>
         <item>Navarinou Square</item>
         <item>Roman Forum</item>
+        <item>Agias Sofias Square</item>
     </string-array>
 
 </resources>
