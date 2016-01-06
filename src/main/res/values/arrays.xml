@@ -14,6 +14,19 @@
         <item>@drawable/ic_icon_10</item>
         <item>@drawable/ic_icon_11</item>
         <item>@drawable/ic_icon_12</item>
+        <item>@drawable/ic_icon_13</item>
+        <item>@drawable/ic_icon_14</item>
+        <item>@drawable/ic_icon_15</item>
+        <item>@drawable/ic_icon_16</item>
+        <item>@drawable/ic_icon_17</item>
+        <item>@drawable/ic_icon_18</item>
+        <item>@drawable/ic_icon_19</item>
+        <item>@drawable/ic_icon_20</item>
+        <item>@drawable/ic_icon_21</item>
+        <item>@drawable/ic_icon_22</item>
+        <item>@drawable/ic_icon_23</item>
+        <item>@drawable/ic_icon_24</item>
+        <item>@drawable/ic_icon_25</item>
     </string-array>
 
     <string-array name="array_markeritems_names">
@@ -29,6 +42,19 @@
         <item>Church of Saint Catherine, Thessaloniki</item>
         <item>Church of Saint Nicholas Orphanos</item>
         <item>Church of Saint Panteleimon</item>
+        <item>Church of Prophet Elijah</item>
+        <item>Hagios Demetrios</item>
+        <item>Hagia Sophia</item>
+        <item>Walls of Thessaloniki</item>
+        <item>Alaca Imaret Mosque</item>
+        <item>Bey Hamam</item>
+        <item>Karipeion Melathron</item>
+        <item>Government House</item>
+        <item>New Mosque</item>
+        <item>White Tower of Thessaloniki</item>
+        <item>Nick Galis Hall</item>
+        <item>Aristotelous Square</item>
+        <item>Ladadika</item>
     </string-array>
 
 </resources>
