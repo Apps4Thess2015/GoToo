@@ -27,6 +27,7 @@
         <item>@drawable/ic_icon_23</item>
         <item>@drawable/ic_icon_24</item>
         <item>@drawable/ic_icon_25</item>
+        <item>@drawable/ic_icon_26</item>
     </string-array>
 
     <string-array name="array_markeritems_names">
@@ -55,6 +56,7 @@
         <item>Nick Galis Hall</item>
         <item>Aristotelous Square</item>
         <item>Ladadika</item>
+        <item>Modiano Market</item>
     </string-array>
 
 </resources>

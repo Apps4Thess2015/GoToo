@@ -68,6 +68,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         add(new LatLng(40.626897, 22.957219));
         add(new LatLng(40.945833, 22.455));
         add(new LatLng(40.635, 22.937));
+        add(new LatLng(40.6349, 22.9418));
     }};
 
     public ArrayList<Marker> markerArrayList = new ArrayList<>(latLngArrayList.size());
