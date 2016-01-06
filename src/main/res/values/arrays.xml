@@ -28,6 +28,11 @@
         <item>@drawable/ic_icon_24</item>
         <item>@drawable/ic_icon_25</item>
         <item>@drawable/ic_icon_26</item>
+        <item>@drawable/ic_icon_27</item>
+        <item>@drawable/ic_icon_28</item>
+        <item>@drawable/ic_icon_29</item>
+        <item>@drawable/ic_icon_30</item>
+        <item>@drawable/ic_icon_31</item>
     </string-array>
 
     <string-array name="array_markeritems_names">
@@ -48,6 +53,7 @@
         <item>Hagia Sophia</item>
         <item>Walls of Thessaloniki</item>
         <item>Alaca Imaret Mosque</item>
+        <item>Upper Town</item>
         <item>Bey Hamam</item>
         <item>Karipeion Melathron</item>
         <item>Government House</item>
@@ -57,6 +63,10 @@
         <item>Aristotelous Square</item>
         <item>Ladadika</item>
         <item>Modiano Market</item>
+        <item>National Theatre of Northern Greece</item>
+        <item>OTE Tower</item>
+        <item>Port of Thessaloniki</item>
+        <item>Thessaloniki Concert Hall</item>
     </string-array>
 
 </resources>

@@ -60,6 +60,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         add(new LatLng(40.632844, 22.947094));
         add(new LatLng(40.642677, 22.954641));
         add(new LatLng(40.639167, 22.949722));
+        add(new LatLng(40.642, 22.952));
         add(new LatLng(40.6357, 22.9453));
         add(new LatLng(40.6421, 22.9461));
         add(new LatLng(40.640848, 22.944807));
@@ -69,6 +70,10 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         add(new LatLng(40.945833, 22.455));
         add(new LatLng(40.635, 22.937));
         add(new LatLng(40.6349, 22.9418));
+        add(new LatLng(40.6266, 22.9496));
+        add(new LatLng(40.62612, 22.95455));
+        add(new LatLng(40.636, 22.922));
+        add(new LatLng(40.598333, 22.948333));
     }};
 
     public ArrayList<Marker> markerArrayList = new ArrayList<>(latLngArrayList.size());
