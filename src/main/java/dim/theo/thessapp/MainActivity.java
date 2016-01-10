@@ -37,8 +37,8 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     public static final String TAG = "MAINACTIVITY";
 
     private TypedArray markerIcons;
-    private String[] names;
-    private String[] texts;
+    private String[] markerNames;
+    private String[] markerTexts;
 
     private LatLng mapCenter;
 
@@ -104,8 +104,8 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
 
         markerIcons = getResources().obtainTypedArray(R.array.array_marker_icons);
-        names = getResources().getStringArray(R.array.array_markeritems_names);
-        texts = getResources().getStringArray(R.array.array_markeritems_texts);
+        markerNames = getResources().getStringArray(R.array.array_markeritems_names);
+        markerTexts = getResources().getStringArray(R.array.array_markeritems_texts);
 
         populateMarkerItemsArrayList();
     }
@@ -115,7 +115,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void run() {
                 MarkerItem markerItem = new MarkerItem();
-                mainPresenter.populateMarkerItemsArrayList(markerItem, latLngArrayList, names, markerIcons, markerItemArrayList);
+                mainPresenter.populateMarkerItemsArrayList(markerItem, latLngArrayList, markerNames, markerIcons, markerItemArrayList);
             }
         }).start();
     }
@@ -151,7 +151,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
         bottomSheet.showWithSheetView(LayoutInflater.from(this).inflate(R.layout.bottom_sheet, bottomSheet, false));
         TextView textView = (TextView) bottomSheet.findViewById(R.id.sheet_text);
-        textView.setText(Html.fromHtml(texts[i]));
+        textView.setText(Html.fromHtml(markerTexts[i]));
         textView.setMovementMethod(LinkMovementMethod.getInstance());
         return false;
     }
