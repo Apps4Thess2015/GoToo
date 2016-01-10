@@ -107,7 +107,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         markerNames = getResources().getStringArray(R.array.array_markeritems_names);
         markerTexts = getResources().getStringArray(R.array.array_markeritems_texts);
 
-        populateMarkerItemsArrayList();
+//        populateMarkerItemsArrayList();
     }
 
     public void populateMarkerItemsArrayList() {
