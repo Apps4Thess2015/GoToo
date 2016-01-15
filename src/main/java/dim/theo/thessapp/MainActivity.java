@@ -209,6 +209,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         markerArrayList.set(i, mMap.addMarker(new MarkerOptions()
                 .position(pos)
                 .icon(BitmapDescriptorFactory.fromBitmap(halfsizeBitmap))));
+        halfsizeBitmap.recycle();
     }
 
     private int removeMarker(LatLng pos) {
