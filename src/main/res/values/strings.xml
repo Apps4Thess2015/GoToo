@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ThessApp</string>
     <string name="title_activity_main">Main</string>
+    <string name="settings">Settings</string>
 
     <string-array name="array_markeritems_texts">
         <item>
