@@ -246,7 +246,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                     .icon(BitmapDescriptorFactory.fromResource(markerIcons.getResourceId(i, -1)))));
             i++;
         }
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SKG_VIEW, 12));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SKG_VIEW, 14));
     }
 
     public void displaySettings(View view) {
