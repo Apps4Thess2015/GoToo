@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.crashlytics.android.Crashlytics;
 import com.flipboard.bottomsheet.BottomSheetLayout;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -35,6 +36,7 @@ import java.util.ArrayList;
 import dim.theo.thessapp.helpers.Helper;
 import dim.theo.thessapp.model.MarkerItem;
 import dim.theo.thessapp.presenter.MainPresenterImpl;
+import io.fabric.sdk.android.Fabric;
 
 import static dim.theo.thessapp.helpers.Helper.distanceFrom;
 
@@ -112,6 +114,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_main);
 
         readPreferences();
