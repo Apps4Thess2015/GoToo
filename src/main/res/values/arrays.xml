@@ -33,6 +33,11 @@
         <item>@drawable/ic_ote_tower</item>
         <item>@drawable/ic_port_of_thessaloniki</item>
         <item>@drawable/ic_thessaloniki_concert_hall</item>
+        <item>@drawable/icon1</item>
+        <item>@drawable/icon2</item>
+        <item>@drawable/icon3</item>
+        <item>@drawable/icon4</item>
+        <item>@drawable/icon1</item>
     </string-array>
 
     <string-array name="array_markeritems_names">
@@ -67,6 +72,11 @@
         <item>OTE Tower</item>
         <item>Port of Thessaloniki</item>
         <item>Thessaloniki Concert Hall</item>
+        <item>Statue Alexander the Great</item>
+        <item>Museum for the Macedonian Struggle (Thessaloniki)</item>
+        <item>Jewish Museum of Thessaloniki</item>
+        <item>Archaeological Museum of Thessaloniki</item>
+        <item>Museum of Byzantine Culture</item>
     </string-array>
 
 </resources>
