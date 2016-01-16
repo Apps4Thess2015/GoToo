@@ -19,8 +19,13 @@ public class Helper {
         this.context = context;
     }
 
-    public Bitmap scaleBitmap(int scaleFactor, int i) {
-        TypedArray markerIcons = context.getResources().obtainTypedArray(R.array.array_marker_icons);
+    public Bitmap scaleBitmap(int scaleFactor, int i, String iconSize) {
+        TypedArray markerIcons;
+        if ("Normal".equals(iconSize)) {
+            markerIcons = context.getResources().obtainTypedArray(R.array.array_marker_icons);
+        } else {
+            markerIcons = context.getResources().obtainTypedArray(R.array.array_marker_icons_small);
+        }
         Drawable drawable = context.getResources().getDrawable(markerIcons.getResourceId(i, -1));
         BitmapDrawable bitmapDrawable = (BitmapDrawable) drawable.getCurrent();
         Bitmap bitmap = bitmapDrawable.getBitmap();

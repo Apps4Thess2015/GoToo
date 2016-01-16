@@ -9,6 +9,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.RadioButton;
@@ -44,6 +45,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     public static final String TAG = "MAINACTIVITY";
 
     private TypedArray markerIcons;
+    private TypedArray markerSmallIcons;
     private String[] markerNames;
     private String[] markerTextsUK;
     private String[] markerTextsGR;
@@ -125,6 +127,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
 
         markerIcons = getResources().obtainTypedArray(R.array.array_marker_icons);
+        markerSmallIcons = getResources().obtainTypedArray(R.array.array_marker_icons_small);
         markerNames = getResources().getStringArray(R.array.array_markeritems_names);
         markerTextsUK = getResources().getStringArray(R.array.array_markeritems_texts_uk);
         markerTextsGR = getResources().getStringArray(R.array.array_markeritems_texts_gr);
@@ -154,7 +157,12 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
         mapCenter = mMap.getCameraPosition().target;
 
-        addMarkers();
+        if ("Normal".equals(iconSizePreference)) {
+            addMarkers();
+        } else {
+            Log.i(TAG, "onMapReady MAP READY WITH SMALL MAP READY WITH SMALL");
+            addSmallMarkers();
+        }
     }
 
     @Override
@@ -225,8 +233,9 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void resizeIcon(LatLng pos, int scaleFactor) {
+        String iconSize = iconSizePreference;
         int i = removeMarker(pos);
-        Bitmap halfsizeBitmap = helper.scaleBitmap(scaleFactor, i);
+        Bitmap halfsizeBitmap = helper.scaleBitmap(scaleFactor, i, iconSize);
         markerArrayList.set(i, mMap.addMarker(new MarkerOptions()
                 .position(pos)
                 .icon(BitmapDescriptorFactory.fromBitmap(halfsizeBitmap))));
@@ -247,6 +256,22 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
             i++;
         }
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SKG_VIEW, 14));
+    }
+
+    private void addSmallMarkers() {
+        int i = 0;
+
+        for (LatLng pos : latLngArrayList) {
+            markerArrayList.add(i, mMap.addMarker(new MarkerOptions()
+                    .position(pos)
+                    .icon(BitmapDescriptorFactory.fromResource(markerSmallIcons.getResourceId(i, -1)))));
+            i++;
+        }
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SKG_VIEW, 14));
+    }
+
+    private void removeAllMarkers() {
+        mMap.clear();
     }
 
     public void displaySettings(View view) {
@@ -278,8 +303,14 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                             int iconSizeSelectedId = iconSizeRadioGroup.getCheckedRadioButtonId();
                             if (iconSizeSelectedId == normalIconSizeRadioButton.getId()) {
                                 iconSizePref = "Normal";
+                                removeAllMarkers();
+                                markerArrayList.clear();
+                                addMarkers();
                             } else if (iconSizeSelectedId == smallIconSizeRadioButton.getId()) {
                                 iconSizePref = "Small";
+                                removeAllMarkers();
+                                markerArrayList.clear();
+                                addSmallMarkers();
                             } else {
                                 iconSizePref = "pin";
                             }
