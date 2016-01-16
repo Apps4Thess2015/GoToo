@@ -1,12 +1,21 @@
-<com.flipboard.bottomsheet.BottomSheetLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/bottomsheet"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-<fragment
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" android:id="@+id/map" tools:context=".MainActivity"
-    android:name="com.google.android.gms.maps.SupportMapFragment" />
+    <com.flipboard.bottomsheet.BottomSheetLayout
+        android:id="@+id/bottomsheet"
+        android:layout_width="match_parent" android:layout_height="match_parent">
 
-</com.flipboard.bottomsheet.BottomSheetLayout>
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/map" tools:context=".MainActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    </com.flipboard.bottomsheet.BottomSheetLayout>
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="top|right" android:src="@drawable/ic_settings"
+        android:onClick="displaySettings"
+        android:contentDescription="@string/settings" />
+
+</FrameLayout>
