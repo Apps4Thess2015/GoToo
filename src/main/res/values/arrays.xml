@@ -2,37 +2,37 @@
 <resources>
 
     <string-array name="array_marker_icons">
-        <item>@drawable/ic_icon_1</item>
-        <item>@drawable/ic_icon_2</item>
-        <item>@drawable/ic_icon_3</item>
-        <item>@drawable/ic_icon_4</item>
-        <item>@drawable/ic_icon_5</item>
-        <item>@drawable/ic_icon_6</item>
-        <item>@drawable/ic_icon_7</item>
-        <item>@drawable/ic_icon_8</item>
-        <item>@drawable/ic_icon_9</item>
-        <item>@drawable/ic_icon_10</item>
-        <item>@drawable/ic_icon_11</item>
-        <item>@drawable/ic_icon_12</item>
-        <item>@drawable/ic_icon_13</item>
-        <item>@drawable/ic_icon_14</item>
-        <item>@drawable/ic_icon_15</item>
-        <item>@drawable/ic_icon_16</item>
-        <item>@drawable/ic_icon_17</item>
-        <item>@drawable/ic_icon_18</item>
-        <item>@drawable/ic_icon_19</item>
-        <item>@drawable/ic_icon_20</item>
-        <item>@drawable/ic_icon_21</item>
-        <item>@drawable/ic_icon_22</item>
-        <item>@drawable/ic_icon_23</item>
-        <item>@drawable/ic_icon_24</item>
-        <item>@drawable/ic_icon_25</item>
-        <item>@drawable/ic_icon_26</item>
-        <item>@drawable/ic_icon_27</item>
-        <item>@drawable/ic_icon_28</item>
-        <item>@drawable/ic_icon_29</item>
-        <item>@drawable/ic_icon_30</item>
-        <item>@drawable/ic_icon_31</item>
+        <item>@drawable/ic_arch_of_galerius_and_rotunda</item>
+        <item>@drawable/ic_navarinou_square</item>
+        <item>@drawable/ic_roman_forum</item>
+        <item>@drawable/ic_hagia_sophia_square</item>
+        <item>@drawable/ic_byzantine_bath</item>
+        <item>@drawable/ic_church_of_the_acheiropoietos</item>
+        <item>@drawable/ic_church_of_the_holy_apostles</item>
+        <item>@drawable/ic_church_of_hosios_david</item>
+        <item>@drawable/ic_church_of_panagia_chalkeon</item>
+        <item>@drawable/ic_church_of_saint_catherine</item>
+        <item>@drawable/ic_church_of_saint_nicholas_orphanos</item>
+        <item>@drawable/ic_church_of_saint_panteleimon</item>
+        <item>@drawable/ic_church_of_prophet_elijah</item>
+        <item>@drawable/ic_hagios_demetrios</item>
+        <item>@drawable/ic_hagia_sophia</item>
+        <item>@drawable/ic_walls_of_thessaloniki</item>
+        <item>@drawable/ic_alaca_imaret_mosque</item>
+        <item>@drawable/ic_upper_town</item>
+        <item>@drawable/ic_bey_hamam</item>
+        <item>@drawable/ic_karipeion_melathron</item>
+        <item>@drawable/ic_government_house</item>
+        <item>@drawable/ic_new_mosque</item>
+        <item>@drawable/ic_white_tower</item>
+        <item>@drawable/ic_alexandreio_melathron</item>
+        <item>@drawable/ic_aristotelous_square</item>
+        <item>@drawable/ic_ladadika</item>
+        <item>@drawable/ic_modiano_market</item>
+        <item>@drawable/ic_nationaltheatre_of_northern_greece</item>
+        <item>@drawable/ic_ote_tower</item>
+        <item>@drawable/ic_port_of_thessaloniki</item>
+        <item>@drawable/ic_thessaloniki_concert_hall</item>
     </string-array>
 
     <string-array name="array_markeritems_names">
@@ -59,7 +59,7 @@
         <item>Government House</item>
         <item>New Mosque</item>
         <item>White Tower of Thessaloniki</item>
-        <item>Nick Galis Hall</item>
+        <item>Alexandreio Melathron</item>
         <item>Aristotelous Square</item>
         <item>Ladadika</item>
         <item>Modiano Market</item>

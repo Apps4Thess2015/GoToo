@@ -1,6 +1,7 @@
 package dim.theo.thessapp.helpers;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
@@ -18,10 +19,12 @@ public class Helper {
         this.context = context;
     }
 
-    public Bitmap scaleBitmap(int scaleFactor) {
-        Drawable drawable = context.getResources().getDrawable(R.drawable.ic_icon_1);
+    public Bitmap scaleBitmap(int scaleFactor, int i) {
+        TypedArray markerIcons = context.getResources().obtainTypedArray(R.array.array_marker_icons);
+        Drawable drawable = context.getResources().getDrawable(markerIcons.getResourceId(i, -1));
         BitmapDrawable bitmapDrawable = (BitmapDrawable) drawable.getCurrent();
         Bitmap bitmap = bitmapDrawable.getBitmap();
+        markerIcons.recycle();
         return Bitmap.createScaledBitmap(bitmap, bitmap.getWidth() * scaleFactor / 10, bitmap.getHeight() * scaleFactor / 10, false);
     }
 

@@ -221,7 +221,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void resizeIcon(LatLng pos, int scaleFactor) {
         int i = removeMarker(pos);
-        Bitmap halfsizeBitmap = helper.scaleBitmap(scaleFactor);
+        Bitmap halfsizeBitmap = helper.scaleBitmap(scaleFactor, i);
         markerArrayList.set(i, mMap.addMarker(new MarkerOptions()
                 .position(pos)
                 .icon(BitmapDescriptorFactory.fromBitmap(halfsizeBitmap))));
