@@ -1,16 +1,22 @@
 package dim.theo.thessapp;
 
+import android.content.SharedPreferences;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.location.Location;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.afollestad.materialdialogs.DialogAction;
+import com.afollestad.materialdialogs.MaterialDialog;
 import com.flipboard.bottomsheet.BottomSheetLayout;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -39,7 +45,8 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
     private TypedArray markerIcons;
     private String[] markerNames;
-    private String[] markerTexts;
+    private String[] markerTextsUK;
+    private String[] markerTextsGR;
 
     private LatLng mapCenter;
 
@@ -89,10 +96,18 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
     private BottomSheetLayout bottomSheet;
 
+    private RadioGroup languageRadioGroup, iconSizeRadioGroup;
+
+    public static final String PREFS_NAME = "MyPreferences";
+    public String languagePreference = "UK";
+    public String iconSizePreference = "Normal";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        readPreferences();
 
         bottomSheet = (BottomSheetLayout) findViewById(R.id.bottomsheet);
 
@@ -106,19 +121,15 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
         markerIcons = getResources().obtainTypedArray(R.array.array_marker_icons);
         markerNames = getResources().getStringArray(R.array.array_markeritems_names);
-        markerTexts = getResources().getStringArray(R.array.array_markeritems_texts);
+        markerTextsUK = getResources().getStringArray(R.array.array_markeritems_texts_uk);
+        markerTextsGR = getResources().getStringArray(R.array.array_markeritems_texts_gr);
 
-//        populateMarkerItemsArrayList();
     }
 
-    public void populateMarkerItemsArrayList() {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                MarkerItem markerItem = new MarkerItem();
-                mainPresenter.populateMarkerItemsArrayList(markerItem, latLngArrayList, markerNames, markerIcons, markerItemArrayList);
-            }
-        }).start();
+    private void readPreferences() {
+        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+        languagePreference = settings.getString("language", "UK");
+        iconSizePreference = settings.getString("iconsize", "Normal");
     }
 
     /**
@@ -152,7 +163,11 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
         bottomSheet.showWithSheetView(LayoutInflater.from(this).inflate(R.layout.bottom_sheet, bottomSheet, false));
         TextView textView = (TextView) bottomSheet.findViewById(R.id.sheet_text);
-        textView.setText(Html.fromHtml(markerTexts[i]));
+        if ("UK".equals(languagePreference)) {
+            textView.setText(Html.fromHtml(markerTextsUK[i]));
+        } else if ("GR".equals(languagePreference)){
+            textView.setText(Html.fromHtml(markerTextsGR[i]));
+        }
         textView.setMovementMethod(LinkMovementMethod.getInstance());
         return false;
     }
@@ -230,5 +245,67 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     public void displaySettings(View view) {
+        bottomSheet.dismissSheet();
+
+        MaterialDialog dialog = new MaterialDialog.Builder(this)
+                .title("Preferences")
+                .customView(R.layout.dialog_preferences, true)
+                .positiveText("OK")
+                .negativeText("Cancel")
+                .onPositive(new MaterialDialog.SingleButtonCallback() {
+                    @Override
+                    public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                        final String languagePref, iconSizePref;
+
+                        if (dialog.getCustomView().findViewById(R.id.radioLanguage) != null) {
+                            RadioButton englishRadioButton = (RadioButton) dialog.getCustomView().findViewById(R.id.radioEnglish);
+                            languageRadioGroup = (RadioGroup) dialog.getCustomView().findViewById(R.id.radioLanguage);
+                            int languageSelectedId = languageRadioGroup.getCheckedRadioButtonId();
+                            if (languageSelectedId == englishRadioButton.getId() ) {
+                                languagePref = "UK";
+                            } else {
+                                languagePref = "GR";
+                            }
+
+                            RadioButton normalIconSizeRadioButton = (RadioButton) dialog.getCustomView().findViewById(R.id.iconSizeNormal);
+                            RadioButton smallIconSizeRadioButton = (RadioButton) dialog.getCustomView().findViewById(R.id.iconSizeSmall);
+                            iconSizeRadioGroup = (RadioGroup) dialog.getCustomView().findViewById(R.id.radioIconSize);
+                            int iconSizeSelectedId = iconSizeRadioGroup.getCheckedRadioButtonId();
+                            if (iconSizeSelectedId == normalIconSizeRadioButton.getId()) {
+                                iconSizePref = "Normal";
+                            } else if (iconSizeSelectedId == smallIconSizeRadioButton.getId()) {
+                                iconSizePref = "Small";
+                            } else {
+                                iconSizePref = "pin";
+                            }
+
+                            languagePreference = languagePref;
+                            iconSizePreference = iconSizePref;
+
+                            SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+                            SharedPreferences.Editor editor = settings.edit();
+                            editor.putString("language", languagePref);
+                            editor.putString("iconsize", iconSizePref);
+                            editor.commit();
+
+                        }
+                    }
+                }).build();
+
+        RadioButton englishRadioButton = (RadioButton) dialog.getCustomView().findViewById(R.id.radioEnglish);
+        RadioButton greekRadioButton = (RadioButton) dialog.getCustomView().findViewById(R.id.radioGreek);
+        RadioButton normalIconSizeRadioButton = (RadioButton) dialog.getCustomView().findViewById(R.id.iconSizeNormal);
+        RadioButton smallIconSizeRadioButton = (RadioButton) dialog.getCustomView().findViewById(R.id.iconSizeSmall);
+
+        if ("UK".equals(languagePreference)) {
+            englishRadioButton.setChecked(true);
+        } else greekRadioButton.setChecked(true);
+
+        if ("Normal".equals(iconSizePreference)) {
+            normalIconSizeRadioButton.setChecked(true);
+        } else smallIconSizeRadioButton.setChecked(true);
+
+        dialog.show();
     }
+
 }

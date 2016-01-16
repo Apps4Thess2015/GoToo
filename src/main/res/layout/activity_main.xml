@@ -14,7 +14,7 @@
     </com.flipboard.bottomsheet.BottomSheetLayout>
 
     <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:layout_gravity="top|right" android:src="@drawable/ic_setting_light"
+        android:layout_gravity="top|right" android:src="@drawable/ic_settings"
         android:onClick="displaySettings"
         android:contentDescription="@string/settings" />
 

@@ -2,10 +2,16 @@
     <string name="app_name">ThessApp</string>
     <string name="title_activity_main">Main</string>
     <string name="settings">Settings</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="greek">Greek</string>
+    <string name="iconsize">Icon Size</string>
+    <string name="normal_icon_size">Normal Icons</string>
+    <string name="small_icons">Small Icons</string>
 
-    <string-array name="array_markeritems_texts">
+    <string-array name="array_markeritems_texts_uk">
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>Arch of Galerius</b> (<a href="/wiki/Greek_language" title="Greek language">Gr.</a>: αψίδα του Γαλερίου) (or <b>Kamara</b>, <a href="/wiki/Greek_language" title="Greek language">Gr.</a>:καμάρα) and the <b>Rotunda</b> (ροτόντα) are neighboring early 4th-century monuments in the city of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, in the region of <a href="/wiki/Central_Macedonia" title="Central Macedonia">Central Macedonia</a> in northern <a href="/wiki/Greece" title="Greece">Greece</a>. The Rotunda is also known as the <b>Church of Agios Georgios</b> or (in English) the <b><a href="/wiki/Rotunda_(architecture)" title="Rotunda (architecture)">Rotunda</a> of <a href="/wiki/St._George" title="St. George" class="mw-redirect">St. George</a></b>.</p>
 
             <h2>History</h2>
@@ -35,7 +41,7 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p><b>Navarinou Square</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Πλατεία Ναβαρίνου</span>) is a <a href="/wiki/Town_square" title="Town square">square</a> in the city of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a> in <a href="/wiki/Greece" title="Greece">Greece</a>.</p>
 
             <h2>History</h2>
@@ -45,14 +51,14 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <a href="/wiki/Roman_Forum" title="Roman Forum">Roman Forum</a> of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a> is the ancient Roman-era <a href="/wiki/Forum_(Roman)" title="Forum (Roman)">forum</a> (or <i>Agora</i>) of the city, located at the upper side of <a href="/wiki/Aristotelous_Square" title="Aristotelous Square">Aristotelous Square</a>.</p>
             <p>It is a large two-terraced forum<sup id="cite_ref-Frommer.27s_Greece_Forum_1_1-0" class="reference"><a href="#cite_note-Frommer.27s_Greece_Forum_1-1"><span>[</span>1<span>]</span></a></sup> featuring two-storey <a href="/wiki/Stoa" title="Stoa">stoas</a>, dug up by accident in the 1960s. The forum complex also boasts two <a href="/wiki/Roman_baths" title="Roman baths" class="mw-redirect">Roman baths</a>,<sup id="cite_ref-A_Companion_1_2-0" class="reference"><a href="#cite_note-A_Companion_1-2"><span>[</span>2<span>]</span></a></sup> one of which has been excavated while the other is buried underneath the city, and a small theater which was also used for <a href="/wiki/Gladiatorial_games" title="Gladiatorial games" class="mw-redirect">gladiatorial games</a>. Although the initial complex was not built in Roman times, it was largely refurbished in the 2nd century.<sup id="cite_ref-A_Companion_1_2-1" class="reference"><a href="#cite_note-A_Companion_1-2"><span>[</span>2<span>]</span></a></sup> It is believed that the forum and the theater continued to be used until at least the 6th century.<sup id="cite_ref-From_Early_Roman_3-0" class="reference">
         ]]>
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p><b>Agias Sofias Square</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Πλατεία Αγίας Σοφίας</span>) is a <a href="/wiki/Town_square" title="Town square">square</a> in the city of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a> in <a href="/wiki/Greece" title="Greece">Greece</a>.</p>
 
             <h2>History</h2>
@@ -62,7 +68,7 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p><br> The <b>Byzantine Bath of the Upper Town</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Βυζαντινά Λουτρά Άνω Πόλης</span>) in <a href="/wiki/Thesaloniki" title="Thesaloniki" class="mw-redirect">Thesaloniki</a> is the only Byzantine bath that has survived from the middle <a href="/wiki/Byzantine_Empire" title="Byzantine Empire">Byzantine period</a> in <a href="/wiki/Greece" title="Greece">Greece</a>. It is located on the Theotokopoulou Street in the Upper Old City of Thessaloniki.</p>
             <p>The baths date to the late 13th/early 14th century, and functioned continuously until 1940. The original architecture follows the typical conventions of <a href="/wiki/Roman_baths" title="Roman baths" class="mw-redirect">Roman baths</a>, with a <i><a href="/wiki/Frigidarium" title="Frigidarium">frigidarium</a></i>, <i><a href="/wiki/Tepidarium" title="Tepidarium">tepidarium</a></i> and <i><a href="/wiki/Caldarium" title="Caldarium">caldarium</a></i>, each with two rooms. To the north of the baths was the cistern that provided it with water, with a hearth beneath to warm it. In Byzantine times the building was alternately used by men and women, but in the Ottoman period the bath was divided into exclusively male and female sections, by blocking off each pair of rooms from each other.</p>
             <p>In 1988, it was included among the <a href="/wiki/Paleochristian_and_Byzantine_monuments_of_Thessaloniki" title="Paleochristian and Byzantine monuments of Thessaloniki">Paleochristian and Byzantine monuments of Thessaloniki</a> on the list of <a href="/wiki/World_Heritage_Site" title="World Heritage Site">World Heritage Sites</a> by <a href="/wiki/UNESCO" title="UNESCO">UNESCO</a>.</p>
@@ -70,7 +76,7 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>Church of the Acheiropoietos</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el"><span lang="grc">[Παναγία] Ἀχειροποίητος</span></span>) is a 5th-century <a href="/wiki/Byzantine" title="Byzantine" class="mw-redirect">Byzantine</a> church in the northern <a href="/wiki/Greece" title="Greece">Greek</a> city of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>. It is located in the city\'s centre, at Agias Sofias street opposite Makedonomachon square.<sup id="cite_ref-Ministry_1-0" class="reference"><a href="#cite_note-Ministry-1"><span>[</span>1<span>]</span></a></sup></p>
 
             <h2>History and description</h2>
@@ -82,7 +88,7 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>Church of the Holy Apostles</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el"><span lang="grc">Ἅγιοι Ἀπόστολοι</span></span>) is a 14th-century <a href="/wiki/Byzantine" title="Byzantine" class="mw-redirect">Byzantine</a> church in the northern <a href="/wiki/Greece" title="Greece">Greek</a> city of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>.</p>
 
             <h2>History and description</h2>
@@ -96,13 +102,13 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>Church of Hosios David</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Όσιος Δαβίδ</span>) is a late 5th-century church in <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a>. In <a href="/wiki/Byzantine" title="Byzantine" class="mw-redirect">Byzantine</a> times, it functioned as the <i><a href="/wiki/Katholikon" title="Katholikon">katholikon</a></i> of the <b>Latomos Monastery</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el"><span lang="grc" xml:lang="grc">Μονή Λατόμου/Λατόμων</span></span>), and received a rich <a href="/wiki/Mosaic" title="Mosaic">mosaic</a> and <a href="/wiki/Fresco" title="Fresco">fresco</a> decoration, which was renewed in the 12th–14th centuries. The surviving examples are of high artistic quality. Under <a href="/wiki/Ottoman_Empire" title="Ottoman Empire">Ottoman</a> rule, the building was converted into a mosque (probably in the 16th century), until it was reconsecrated as a <a href="/wiki/Greek_Orthodox" title="Greek Orthodox" class="mw-redirect">Greek Orthodox</a> church in 1921, receiving its present name. In 1988, included among the <a href="/wiki/Paleochristian_and_Byzantine_monuments_of_Thessaloniki" title="Paleochristian and Byzantine monuments of Thessaloniki">Paleochristian and Byzantine monuments of Thessaloniki</a> on the list of <a href="/wiki/World_Heritage_Site" title="World Heritage Site">World Heritage Sites</a> by <a href="/wiki/UNESCO" title="UNESCO">UNESCO</a>.</p>
         ]]>
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>Church of Panagia Chalkeon</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el"><span lang="grc">Παναγία τῶν Χαλκέων</span></span>) is an 11th-century <a href="/wiki/Byzantine" title="Byzantine" class="mw-redirect">Byzantine</a> church in the northern <a href="/wiki/Greece" title="Greece">Greek</a> city of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>.</p>
 
             <h2>Location</h2>
@@ -116,13 +122,13 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>Church of Saint Catherine</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Αγία Αικατερίνη</span>) is a late <a href="/wiki/Byzantine" title="Byzantine" class="mw-redirect">Byzantine</a> church in the northwestern corner of the old city of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a>. The church dates to the <a href="/wiki/Palaiologan_period" title="Palaiologan period" class="mw-redirect">Palaiologan period</a>, but its exact dating and original dedication are unknown. From its interior decoration, which survives in fragments and is dated to ca. 1315, it has been suggested that it was the <i><a href="/wiki/Katholikon" title="Katholikon">katholikon</a></i> of the Monastery of the Almighty. It was converted to a <a href="/wiki/Mosque" title="Mosque">mosque</a> by Yakup Pasha in the reign of the <a href="/wiki/Ottoman_Empire" title="Ottoman Empire">Ottoman</a> sultan <a href="/wiki/Bayezid_II" title="Bayezid II">Bayezid II</a> (r. 1481–1512) and named after him <b>Yakup Pasha Mosque</b> (<a href="/wiki/Turkish_language" title="Turkish language">Turkish</a>: <span lang="tr" xml:lang="tr"><i>Yakup Paşa Camii</i></span>). In 1988, it was included among the <a href="/wiki/Paleochristian_and_Byzantine_monuments_of_Thessaloniki" title="Paleochristian and Byzantine monuments of Thessaloniki">Paleochristian and Byzantine monuments of Thessaloniki</a> on the list of <a href="/wiki/World_Heritage_Site" title="World Heritage Site">World Heritage Sites</a> by <a href="/wiki/UNESCO" title="UNESCO">UNESCO</a>.</p>
         ]]>
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>Church of Saint Nicholas Orphanos</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el"><span lang="grc">Ἅγιος Νικόλαος ὁ Ὀρφανός</span></span>) is an early 14th-century <a href="/wiki/Byzantine" title="Byzantine" class="mw-redirect">Byzantine</a> church in the northern <a href="/wiki/Greece" title="Greece">Greek</a> city of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>.</p>
 
             <h2>Location</h2>
@@ -137,7 +143,7 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>Church of Saint Panteleimon</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el">Ναός Αγίου Παντελεήμονα</span>) is a late <a href="/wiki/Byzantine" title="Byzantine" class="mw-redirect">Byzantine</a> church in <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a>, and a <a href="/wiki/UNESCO" title="UNESCO">UNESCO</a> <a href="/wiki/World_Heritage_Site" title="World Heritage Site">World Heritage Site</a>.</p>
             <p>The church lies in the eastern part of the old city, near the <a href="/wiki/Tomb_of_Galerius" title="Tomb of Galerius" class="mw-redirect">Tomb of Galerius</a> (the "Rotunda"), at the junction of Iasonidou and Arrianou streets. Its current dedication to Saint Panteleimon was given to the church after the end of <a href="/wiki/Ottoman_Empire" title="Ottoman Empire">Ottoman</a> rule in 1912, and its original dedication is therefore disputed. In Ottoman times, it was converted into a mosque in 1548 and became known as <b>Ishakiye Camii</b> ("Mosque of Ishak [Isaac]"), which in the prevailing scholarly interpretation points to an identification with the late Byzantine <b>Monastery of the Virgin Peribleptos</b>, also known as the <b>Monastery of Kyr Isaac</b> after its <a href="/wiki/Ktetor" title="Ktetor">founder</a> Jacob, who was the city\'s <a href="/wiki/Metropolitan_bishop" title="Metropolitan bishop">metropolitan bishop</a> in 1295–1315 and became a monk with the <a href="/wiki/Monastic_name" title="Monastic name" class="mw-redirect">monastic name</a> of Isaac. A counter-argument however supports the theory that the present church is unrelated to the Peribleptos Monastery, and that it was converted into a mosque ca. 1500, when the city\'s <i><a href="/wiki/Kad%%C4%%B1" title="Kadı">kadı</a></i> (judge), was Ishak Çelebi, whom the mosque was named after. However, the church\'s architecture and decoration, which date to the late 13th/early 14th centuries, appear to support the former view.</p>
             <p>The church is of the tetrastyle <a href="/wiki/Cross-in-square" title="Cross-in-square">cross-in-square</a> type, with a <a href="/wiki/Narthex" title="Narthex">narthex</a> and a (now destroyed) <a href="/wiki/Ambulatory" title="Ambulatory">ambulatory</a> that is connected to two chapels (still extant). Very few of the building\'s original wall paintings survive. Ottoman remains include the base of the demolished minaret and a marble fountain.</p>
@@ -145,7 +151,7 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>Church of Prophet Elijah</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Ναός Προφήτη Ηλία</span>) is a 14th-century church in <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a>, and a <a href="/wiki/UNESCO" title="UNESCO">UNESCO</a> <a href="/wiki/World_Heritage_Site" title="World Heritage Site">World Heritage Site</a>.</p>
             <p>The church is located in the upper quarter of the old city, and dates to the <a href="/wiki/Palaiologan_period" title="Palaiologan period" class="mw-redirect">Palaiologan period</a>, but its original dedication is unknown. In <a href="/wiki/Ottoman_Empire" title="Ottoman Empire">Ottoman</a> times, it was known as the <b>Saraylı Mosque</b>, and through a misinterpretation of this name came about its modern dedication to the Prophet Elijah. It has been traditionally identified as the <i><a href="/wiki/Katholikon" title="Katholikon">katholikon</a></i> of the Nea Moni monastery, built ca. 1360–1370 on the site of a former palace destroyed in 1342 by the <a href="/wiki/Zealots_of_Thessalonica" title="Zealots of Thessalonica">Zealot uprising</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> Modern research however has cast doubt on this, since the Nea Moni continued to operate well into the <a href="/wiki/Ottoman_Empire" title="Ottoman Empire">Ottoman</a> period, while the church of Prophet Elijah was converted into a mosque by Badrah Mustafa Pasha immediately after the city\'s <a href="/wiki/Siege_of_Thessalonica_(1422%%E2%%80%%931430)" title="Siege of Thessalonica (1422–1430)" class="mw-redirect">capture</a> in 1430. On the basis of its internal decoration, it has been suggested that the church was the <i>katholikon</i> of the important Akapniou Monastery.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
             <p>Its architectural style, a variant of <a href="/wiki/Cross-in-square" title="Cross-in-square">cross-in-square</a> church known as the "<a href="/w/index.php?title=Athonite_type&amp;action=edit&amp;redlink=1" class="new" title="Athonite type (page does not exist)">Athonite type</a>", is unique in the city, and was always reserved for <i>katholika</i> of monasteries. The careful masonry, of alternating courses of bricks and white ashlar, is also unusual for Thessaloniki and its region; it is copied from <a href="/wiki/Constantinople" title="Constantinople">Constantinopolitan</a> architecture.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup> Fragments of the church\'s original decoration survive in the form of wall paintings, fine examples of late <a href="/w/index.php?title=Palaiologan_art&amp;action=edit&amp;redlink=1" class="new" title="Palaiologan art (page does not exist)">Palaiologan art</a>, which influenced later paintings in <a href="/wiki/Medieval_Serbia" title="Medieval Serbia" class="mw-redirect">Serbia</a>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
@@ -153,7 +159,7 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>Church of Saint Demetrius</b>, or <b>Hagios Demetrios</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Άγιος Δημήτριος</span>), is the main sanctuary dedicated to <a href="/wiki/Demetrius_of_Thessaloniki" title="Demetrius of Thessaloniki">Saint Demetrius</a>, the patron saint of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a> (in <a href="/wiki/Central_Macedonia" title="Central Macedonia">Central Macedonia</a>, <a href="/wiki/Greece" title="Greece">Greece</a>), dating from a time when it was the second largest city of the <a href="/wiki/Byzantine_Empire" title="Byzantine Empire">Byzantine Empire</a>. It is part of the site <b>Palaeochristian and Byzantine Monuments of Thessaloniki</b> on the list of <a href="/wiki/World_Heritage_Sites" title="World Heritage Sites" class="mw-redirect">World Heritage Sites</a> by <a href="/wiki/United_Nations_Educational,_Scientific_and_Cultural_Organization" title="United Nations Educational, Scientific and Cultural Organization" class="mw-redirect">UNESCO</a> since 1988.</p>
 
             <h2>History</h2>
@@ -172,7 +178,7 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>Hagia Sophia</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Ἁγία Σοφία</span>, <i>Holy Wisdom</i>) in <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a>, is one of the oldest churches in that city still standing today. It is one of several monuments in Thessaloniki included as a World Heritage Site on the UNESCO list.</p>
 
             <h2>History</h2>
@@ -184,13 +190,13 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>Walls of Thessaloniki</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Τείχη της Θεσσαλονίκης</span>) are the <a href="/wiki/City_walls" title="City walls" class="mw-redirect">city walls</a> surrounding the city of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a> during the <a href="/wiki/Middle_Ages" title="Middle Ages">Middle Ages</a> and until the late 19th century, when large parts of the walls, including the entire seaward section, were demolished as part of the <a href="/wiki/Ottoman_Empire" title="Ottoman Empire">Ottoman</a> authorities\' restructuring of Thessaloniki\'s urban fabric. The city was fortified from its establishment in the late 4th century B.O.T, but the present walls date from the early <a href="/wiki/Byzantine" title="Byzantine" class="mw-redirect">Byzantine</a> period, ca. 390, and incorporate parts of an earlier, late 3rd-century wall. The walls consist of the typical late Roman mixed construction of <a href="/wiki/Ashlar" title="Ashlar">ashlar</a> masonry alternating with bands of <a href="/wiki/Brick" title="Brick">brick</a>. The northern part of the walls adjoins the <a href="/wiki/Acropolis" title="Acropolis">acropolis</a> of the city, which formed a separate fortified enceinte, and within it lies another citadel, the <a href="/wiki/Heptapyrgion_(Thessaloniki)" title="Heptapyrgion (Thessaloniki)">Heptapyrgion</a> (popularly known by its Ottoman name, Yedi Kule).</p>
         ]]>
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p><b>Alaca Imaret Mosque</b> or <b>Ishak Pasha Mosque</b> is a 15th-century <a href="/wiki/Ottoman_architecture" title="Ottoman architecture">Ottoman</a> <a href="/wiki/Mosque" title="Mosque">Mosque</a> in <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a>.<sup id="cite_ref-Sultan_1-0" class="reference"><a href="#cite_note-Sultan-1"><span>[</span>1<span>]</span></a></sup></p>
 
             <h2>Architecture</h2>
@@ -199,7 +205,7 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p><b>Upper Town</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Άνω Πόλη</span>, <i>Ano Poli</i>) is the <a href="/wiki/Old_town" title="Old town">old town</a> of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, located around the city\'s <a href="/wiki/Acropolis" title="Acropolis">acropolis</a>, north of the city center.</p>
             <p>The Upper Town is the most traditional part of the city, as it preserves the Ottoman-era city fabric, otherwise destroyed in the <a href="/wiki/Great_Fire_of_Thessaloniki" title="Great Fire of Thessaloniki" class="mw-redirect">great fire</a> of 1917. Thus it features small stone-paved streets, old squares and houses in traditional Greek and <a href="/wiki/Ottoman_architecture" title="Ottoman architecture">Ottoman architecture</a>. The Upper Town is the highest part of the city, and dominated by the acropolis, the Byzantine and Ottoman-era fort known as <a href="/wiki/Heptapyrgion_(Thessaloniki)" title="Heptapyrgion (Thessaloniki)">Heptapyrgion</a>. The remaining <a href="/wiki/Walls_of_Thessaloniki" title="Walls of Thessaloniki">city walls</a> still ring the Upper Town, with many of its additional Ottoman and Byzantine structures still standing. The <a href="/wiki/Atat%%C3%%BCrk_Museum_(Thessaloniki)" title="Atatürk Museum (Thessaloniki)">Atatürk Museum</a> is also in the Upper Town. During the Ottoman period it was the main district of the Turks of the city, while the Greeks and the Jews were living around the <a href="/wiki/Port_of_Thessaloniki" title="Port of Thessaloniki">port</a>.</p>
             <p>On clear days <a href="/wiki/Mount_Olympus" title="Mount Olympus">Mount Olympus</a>, at about 100&nbsp;km (62&nbsp;mi) away across the gulf, can also be seen towering the horizon.</p>
@@ -207,7 +213,7 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p><b>Bey Hamam</b>, alternatively known as the "Baths of Paradise", is a <a href="/wiki/Turkish_bath" title="Turkish bath">Turkish bathhouse</a> located along <a href="/w/index.php?title=Egnatia_Street&amp;action=edit&amp;redlink=1" class="new" title="Egnatia Street (page does not exist)">Egnatia Street</a> in <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, east of <a href="/wiki/Panagia_Chalkeon" title="Panagia Chalkeon" class="mw-redirect">Panagia Chalkeon</a>.</p>
 
             <h2>History</h2>
@@ -219,14 +225,14 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p><b>Karipeio Melathro</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Καρίπειο Μέλαθρο</span>) is an <a href="/wiki/Ottoman_Empire" title="Ottoman Empire">Ottoman</a>-period historical building in the center of <a href="/wiki/Thessaloniki,_Greece" title="Thessaloniki, Greece" class="mw-redirect">Thessaloniki, Greece</a>. It is located in the crossroad of Olympiados and F. Dragoumi streets.</p>
             <p>Its <a href="/wiki/Architect" title="Architect">architect</a> is the <a href="/wiki/Italian_people" title="Italian people" class="mw-redirect">Italian</a> <a href="/wiki/Vitaliano_Poselli" title="Vitaliano Poselli">Vitaliano Poselli</a>. Karipio was the official residence of the then <a href="/wiki/Selanik" title="Selanik" class="mw-redirect">Selanik</a> Prefect, who was the political representative of the <a href="/wiki/Ottoman_Empire" title="Ottoman Empire">Ottoman Empire</a> in <a href="/wiki/Macedonia_(region)" title="Macedonia (region)">Macedonia</a>. After Thessaloniki became part of Greece in 1912, the building became a property of the <a href="/wiki/Greece" title="Greece">Greek</a> State. In a 1980 decision, the <a href="/wiki/Minister_for_Culture_(Greece)" title="Minister for Culture (Greece)" class="mw-redirect">Greek Ministry of Culture</a> put Karipio under the status of its state protection. Today, the 4-stores building is a property of doctor Alexandros Karipis and home to the <a href="/wiki/Non-governmental" title="Non-governmental" class="mw-redirect">non-governmental</a> <a href="/w/index.php?title=Institute_for_National_and_Religious_Studies_(Thessaloniki)&amp;action=edit&amp;redlink=1" class="new" title="Institute for National and Religious Studies (Thessaloniki) (page does not exist)">Institute for National and Religious Studies</a>.</p>
         ]]>
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>Konak</b> (<a href="/wiki/Turkish_language" title="Turkish language">Turkish</a>: <span lang="tr" xml:lang="tr"><i>Konak</i></span>, <a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Κονάκι</span>) or <b>Government House</b> (Διοικητήριο) is an <a href="/wiki/Ottoman_Empire" title="Ottoman Empire">Ottoman</a>-era building in central <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a>. Originally built in 1891 as the residence (<i><a href="/wiki/Konak_(residence)" title="Konak (residence)">konak</a></i>) of the governor-general (<i><a href="/wiki/W%%C4%%81li" title="Wāli" class="mw-redirect">vali</a></i>) of the <a href="/wiki/Salonica_Vilayet" title="Salonica Vilayet">Salonica Vilayet</a> and the seat of the Ottoman authorities, it now houses the <a href="/wiki/Ministry_of_Macedonia_and_Thrace" title="Ministry of Macedonia and Thrace">Ministry of Macedonia and Thrace</a>.</p>
 
             <h2>History</h2>
@@ -237,13 +243,13 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>New Mosque</b> (<a href="/wiki/Turkish_language" title="Turkish language">Turkish</a>: <span lang="tr" xml:lang="tr"><i>Yeni Camii</i></span>; <a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Γενί Τζαμί</span>, <i>Yeni Tzami</i>) is a historical <a href="/wiki/Mosque" title="Mosque">mosque</a> in <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a>. It was built by Italian architect <a href="/wiki/Vitaliano_Poselli" title="Vitaliano Poselli">Vitaliano Poselli</a> in 1902 for the city\'s <a href="/wiki/Donmeh" title="Donmeh" class="mw-redirect">Donmeh</a> community, Jewish converts to Islam. However, when the Donmeh left the city during the <a href="/wiki/Population_exchange_between_Greece_and_Turkey" title="Population exchange between Greece and Turkey">population exchange between Greece and Turkey</a>, it was used to house the <a href="/wiki/Archaeological_Museum_of_Thessaloniki" title="Archaeological Museum of Thessaloniki">Archaeological Museum of Thessaloniki</a> in 1925.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> Today it serves as an exhibition center.</p>
         ]]>
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>White Tower of Thessaloniki</b> (<a href="/wiki/Ladino_language" title="Ladino language" class="mw-redirect">Ladino</a>: <span lang="lad" xml:lang="lad"><i>Kuli Blanka</i></span>, <a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Λευκός Πύργος</span> <i>Lefkos Pyrgos</i>, <a href="/wiki/Turkish_language" title="Turkish language">Turkish</a>: <span lang="tr" xml:lang="tr"><i>Beyaz Kule</i></span>) is a monument and museum on the waterfront of the city of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, capital of the <a href="/wiki/Macedonia_(Greece)" title="Macedonia (Greece)">region of Macedonia</a> in northern <a href="/wiki/Greece" title="Greece">Greece</a>. The present tower replaced an old <a href="/wiki/Byzantine_architecture" title="Byzantine architecture">Byzantine</a> <a href="/wiki/Byzantine_military" title="Byzantine military" class="mw-redirect">fortification</a>, known to have been mentioned around the 12th century, that the <a href="/wiki/Ottoman_Empire" title="Ottoman Empire">Ottoman Empire</a> reconstructed to fortify the city\'s harbour sometime after Sultan <a href="/wiki/Murad_II" title="Murad II">Murad II</a> captured Thessaloniki in 1430. The tower became a notorious prison and scene of mass executions during the period of <a href="/wiki/Ottoman_rule_in_Greece" title="Ottoman rule in Greece" class="mw-redirect">Ottoman rule</a>.</p>
             <p>The White Tower was substantially remodeled and its exterior was whitewashed after Greece gained control of the city in 1912. It has been adopted as the symbol of the city.</p>
 
@@ -279,7 +285,7 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p><b>Alexandreio Melathron</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: Αλεξάνδρειο Μέλαθρον) with its main hall named <i><b>Nick Galis Hall</b></i> (Σάλα Νίκος Γκάλης), and also called <i><b>Palais des Sports</b></i> (Παλαί ντε Σπορ), is an <a href="/wiki/Indoor_arena" title="Indoor arena" class="mw-redirect">indoor sports arena</a> that is located in <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a>. It is mainly used to host <a href="/wiki/Basketball" title="Basketball">basketball</a> and <a href="/wiki/Volleyball" title="Volleyball">volleyball</a> games. The arena has a seating capacity of 5,138<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup> for basketball games. The arena hosts the home games of <a href="/wiki/Aris_B.C." title="Aris B.C.">Aris B.C.</a>, member of the <a href="/wiki/Greek_Basket_League" title="Greek Basket League">Greek League</a>.</p>
 
             <h2>Location</h2>
@@ -299,7 +305,7 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p><b>Aristotelous Square</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el">Πλατεία Αριστοτέλους</span>, <small>IPA:&nbsp;</small><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="/wiki/Help:IPA_for_Greek" title="Help:IPA for Greek">[plaˈtia aristoˈtelus]</a></span>, <a href="/wiki/Aristotle" title="Aristotle">Aristotle</a> Square) is the main city square of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a> and is located on Nikis avenue (on the city\'s waterfront), in the city center. It was designed by <a href="/wiki/French_people" title="French people">French</a> <a href="/wiki/Architect" title="Architect">architect</a> <a href="/wiki/Ernest_H%%C3%%A9brard" title="Ernest Hébrard">Ernest Hébrard</a> in 1918, but most of the square was built in the 1950s. Many buildings surrounding the central square have since been renovated and its northern parts were largely restored in the 2000s.<sup id="cite_ref-Monumenta_1-0" class="reference"><a href="#cite_note-Monumenta-1"><span>[</span>1<span>]</span></a></sup></p>
             <p>The twelve buildings that make up Aristotelous Square have been listed buildings of the <a href="/wiki/Hellenic_Republic" title="Hellenic Republic" class="mw-redirect">Hellenic Republic</a> since 1950.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
 
@@ -325,7 +331,7 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p><b>Ladadika</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Λαδάδικα</span>) is the name of a historic district and a landmark area of the city of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a>.</p>
             <p>It locates near the <a href="/wiki/Port_of_Thessaloniki" title="Port of Thessaloniki">Port of Thessaloniki</a> and for centuries was one of the most important market places of the city. Its name came about from the many <a href="/wiki/Olive_oil" title="Olive oil">olive oil</a> shops of the area. Many <a href="/wiki/History_of_the_Jews_of_Thessaloniki" title="History of the Jews of Thessaloniki" class="mw-redirect">Jews of the city</a> were living there, while the so-called "Frankish district", with the French/Italian merchants and residents, was located beside.</p>
             <p>In the years before <a href="/wiki/World_War_I" title="World War I">World War I</a> it came to form the <a href="/wiki/Red-light_district" title="Red-light district">red light district</a>, with the area starting to host many <a href="/wiki/Brothels" title="Brothels" class="mw-redirect">brothels</a>. In 1985, Ladakika was listed as a heritage site by the <a href="/wiki/Ministry_of_Culture_and_Sport_(Greece)" title="Ministry of Culture and Sport (Greece)" class="mw-redirect">Ministry of Culture</a>. Its notable architectural style with 19th century buildings is preserved and protected.</p>
@@ -334,14 +340,14 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p><b>Modiano Market</b> is an enclosed market in <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a>. It was built between 1922 and 1930, in the center of the city and forms the central point of the city\'s market which encompasses over several blocks. It took its name from the architect <a href="/w/index.php?title=Eli_Modiano&amp;action=edit&amp;redlink=1" class="new" title="Eli Modiano (page does not exist)">Eli Modiano</a>, a member of the well known Italian–Jewish Modiano family of the city.</p>
             <p>Inside the market there are <a href="/wiki/Fish_markets" title="Fish markets" class="mw-redirect">fish markets</a>, <a href="/wiki/Butcher" title="Butcher">butcher</a> shops, <a href="/wiki/Taverna" title="Taverna">tavernas</a> and bars. It is a place of social meeting and historical significance for the city.</p>
         ]]>
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>National Theatre of Northern Greece</b> in <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a> was founded in 1961 by Sokratis Karantinos, its first director. The Drama School<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> and the Dance Theatre<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup> are integral parts of the National Theatre.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
             <p>NTNG’s present institutional framework was established in 1994, with an Artistic Director and a seven-member Board of Directors who run the <a href="/wiki/Theatre" title="Theatre">Theatre</a>, which is subsidized by the <a href="/wiki/Ministry_of_Culture_and_Tourism_(Greece)" title="Ministry of Culture and Tourism (Greece)" class="mw-redirect">Ministry of Culture and Tourism (Greece)</a>. With four indoor theatres and two open-air theatres, NTNG is one of the biggest theatre organizations<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup> in <a href="/wiki/Greece" title="Greece">Greece</a> and <a href="/wiki/Europe" title="Europe">Europe</a>.</p>
             <p>Since May 1996, NTNG has been a member of the <a href="/wiki/Union_of_the_Theatres_of_Europe" title="Union of the Theatres of Europe">Union of the Theatres of Europe</a> (www.ute-net.org). In October 1997, the 6th Festival of the Union of the Theatres of Europe took place in Thessaloniki, and was a great cultural event for <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a> as well as for Greece. NTNG is also a member of the <a href="/wiki/International_Theatre_Institute" title="International Theatre Institute">International Theatre Institute</a> and the Greek Theatre Centre for children and young people.</p>
@@ -355,7 +361,7 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p><b><a href="/wiki/OTE" title="OTE">OTE</a> Tower</b> is a 76-metre-tall <a href="/wiki/Tower" title="Tower">tower</a> located in the <b>Thessaloniki International Exhibition Center</b> in central <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a>. The tower opened in 1966 and was renovated in 2005.</p>
             <p>The tower was designed by Greek architect A. Anastasiadis and was completed in 1965, with the first black and white broadcasts on a <a href="/wiki/Greece" title="Greece">Greek</a> <a href="/wiki/Television_network" title="Television network">television network</a> taking place from the tower in 1966.<sup id="cite_ref-Emporis_1-0" class="reference"><a href="#cite_note-Emporis-1"><span>[</span>1<span>]</span></a></sup> The tower was also used in the 1970s to support the antennas of an experimental VHF analogue mobile telephone network.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (December 2010)">citation needed</span></a></i>]</sup> Today it is used by the <a href="/wiki/Cosmote" title="Cosmote">Cosmote</a> cellular mobile telephone network.</p>
             <p>The tower today, other than its status as a modern monument of the city and its use by <a href="/wiki/Cosmote" title="Cosmote">Cosmote</a>, opens up for events and exhibitions during the <a href="/wiki/Thessaloniki_International_Trade_Fair" title="Thessaloniki International Trade Fair">Thessaloniki International Trade Fair</a>, while a <a href="/wiki/Revolving_restaurant" title="Revolving restaurant">revolving restaurant</a> operates year round on the top floor.</p>
@@ -363,7 +369,7 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p>The <b>Port of Thessaloniki</b> is one of the largest <a href="/wiki/Greece" title="Greece">Greek</a> <a href="/wiki/Seaport" title="Seaport" class="mw-redirect">seaports</a> and one of the largest ports in the <a href="/wiki/Aegean_Sea" title="Aegean Sea">Aegean Sea</a> basin, with a total annual traffic capacity of 16&nbsp;million&nbsp;tonnes (7&nbsp;million&nbsp;tonnes <a href="/wiki/Bulk_cargo" title="Bulk cargo">dry bulk</a> and 9&nbsp;million&nbsp;tonnes <a href="/wiki/Bulk_liquids" title="Bulk liquids" class="mw-redirect">liquid bulk</a>). As a <a href="/wiki/Free_port" title="Free port" class="mw-redirect">free port</a>, it also functions as a major gateway for the Balkan hinterland and southeastern Europe.</p>
             <p>The Port of <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a> also contains the second largest <a href="/wiki/Shipping_container" title="Shipping container">container</a> <a href="/wiki/Port" title="Port">port</a> in <a href="/wiki/Greece" title="Greece">Greece</a>, after the <a href="/wiki/Port_of_Piraeus" title="Port of Piraeus">Port of Piraeus</a>.</p>
             <div id="toc" class="toc">
@@ -389,10 +395,45 @@
         </item>
 
         <item>
-        <![CDATA[
+            <![CDATA[
             <p><b>Thessaloniki Concert Hall</b> (<a href="/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el" xml:lang="el">Μέγαρο Μουσικής Θεσσαλονίκης</span>) is a centre for the <a href="/wiki/Performing_arts" title="Performing arts">performing arts</a> in <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a>, <a href="/wiki/Greece" title="Greece">Greece</a>. It opened in 2000 on land donated by the Greek state. The complex has two main buildings: M1, with an auditorium that seats 1400; and M2, in more contemporary style by Japanese architect <a href="/wiki/Arata_Isozaki" title="Arata Isozaki">Arata Isozaki</a>, with a number of smaller performance spaces.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
         ]]>
         </item>
 
     </string-array>
+
+    <string-array name="array_markeritems_texts_gr">
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+        <item>Greece</item>
+    </string-array>
+
 </resources>
