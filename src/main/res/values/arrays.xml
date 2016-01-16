@@ -33,11 +33,11 @@
         <item>@drawable/ic_ote_tower</item>
         <item>@drawable/ic_port_of_thessaloniki</item>
         <item>@drawable/ic_thessaloniki_concert_hall</item>
-        <item>@drawable/icon1</item>
-        <item>@drawable/icon2</item>
-        <item>@drawable/icon3</item>
-        <item>@drawable/icon4</item>
-        <item>@drawable/icon1</item>
+        <item>@drawable/ic_great_alexander_statue</item>
+        <item>@drawable/ic_mouseio_makedonikou_agona</item>
+        <item>@drawable/ic_jewish_museum</item>
+        <item>@drawable/ic_archaeological_museum</item>
+        <item>@drawable/ic_byzantine_museum</item>
     </string-array>
 
     <string-array name="array_markeritems_names">
