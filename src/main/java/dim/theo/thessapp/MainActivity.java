@@ -291,6 +291,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                         final String languagePref, iconSizePref;
 
                         if (dialog.getCustomView().findViewById(R.id.radioLanguage) != null) {
+
                             RadioButton englishRadioButton = (RadioButton) dialog.getCustomView().findViewById(R.id.radioEnglish);
                             languageRadioGroup = (RadioGroup) dialog.getCustomView().findViewById(R.id.radioLanguage);
                             int languageSelectedId = languageRadioGroup.getCheckedRadioButtonId();
@@ -304,16 +305,21 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                             RadioButton smallIconSizeRadioButton = (RadioButton) dialog.getCustomView().findViewById(R.id.iconSizeSmall);
                             iconSizeRadioGroup = (RadioGroup) dialog.getCustomView().findViewById(R.id.radioIconSize);
                             int iconSizeSelectedId = iconSizeRadioGroup.getCheckedRadioButtonId();
+                            String previousIconSize = iconSizePreference;
                             if (iconSizeSelectedId == normalIconSizeRadioButton.getId()) {
                                 iconSizePref = "Normal";
-                                removeAllMarkers();
-                                markerArrayList.clear();
-                                addMarkers();
+                                if (!previousIconSize.equals(iconSizePref)) {
+                                    removeAllMarkers();
+                                    markerArrayList.clear();
+                                    addMarkers();
+                                }
                             } else if (iconSizeSelectedId == smallIconSizeRadioButton.getId()) {
                                 iconSizePref = "Small";
-                                removeAllMarkers();
-                                markerArrayList.clear();
-                                addSmallMarkers();
+                                if (!previousIconSize.equals(iconSizePref)) {
+                                    removeAllMarkers();
+                                    markerArrayList.clear();
+                                    addSmallMarkers();
+                                }
                             } else {
                                 iconSizePref = "pin";
                             }
